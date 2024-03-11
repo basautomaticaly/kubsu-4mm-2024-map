@@ -30,6 +30,7 @@ export class AppComponent implements OnInit {
         this.geocodingService.search(search)
           .subscribe(coordinates => {
             this.leaflet.getMap().flyTo(coordinates, 17);
+            alert("ты прям очень крутой!🔥")
           });
       }
     });
